@@ -6,7 +6,7 @@ const Check=()=>{
     const text2=document.querySelector('.text2')
     const text3=document.querySelector('.text3')
 
-    console.log(text1,text2,text3)
+
 
     if(checkBox.checked == true){
         text1.innerHTML=`$${19.99}`
