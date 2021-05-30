@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <title>Pricing Component</title>
+</head>
+
+<body>
+    <section class="positon-relative">
+        <!-- <div class="svg-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="375" height="658"><g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2"><path d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126"/><path d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141"/><path d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108"/></g></svg>
+        </div> -->
+        <div class="container">
+            <div class="heading p-3">
+                <h1 class="text-center my-4 text-capitalize">our Pricing</h1>
+            </div>
+            <div class="togglebtn text-capitalize text-center p-1 mb-5">
+                <span style="margin: 0.8em;opacity: 60%;
+                font-weight: 600;">Anually </span>
+                <label class="switch">
+                  <input type="checkbox" id="checbox" onclick="Check()">
+                  <span class="slider round"></span>
+                </label>
+                <span style="margin: 0.8em;opacity: 60%;
+                font-weight: 600;">Monthly   </span>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 border basic-col text-center p-3 my-4">
+                    <div class="basic-price">
+                        <h5 class="mb-4 mt-4">Basic</h5>
+                        <h1 class="mb-3 text1">$199.99</h1>
+                        <div class="benefits text-center text-capitalize">
+                            <ul class="benefits-container">
+                                <hr>
+                                <li>500 Gb Storgae</li>
+                                <hr>
+                                <li>2 Users Allowed</li>
+                                <hr>
+                                <li>Send upto 3 Gb</li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <button class="btn btn-basic border  text-center w-100 p-2 my-3">Learn more</button>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 border text-center my-2 pro-col">
+                    <div class="basic-price pro-price">
+                        <h5 class="mt-4 mb-4">Professional</h5>
+                        <h1 class="mb-4 text2">$249.99</h1>
+                        <div class="benefits text-center text-capitalize">
+                            <ul class="benefits-container">
+                                <hr>
+                                <li>1 Tb Storgae</li>
+                                <hr>
+                                <li>10 Users Allowed</li>
+                                <hr>
+                                <li>Send upto 10 Gb</li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <button class="btn  btn-pro border  text-center w-100 p-2 my-3">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 border text-center my-4 master-col">
+                    <div class="basic-price master-price">
+                        <h5 class="mt-4 mb-4">Master</h5>
+                        <h1 class="mb-4 text3">$399.99</h1>
+                        <div class="benefits text-center text-capitalize">
+                            <ul class="benefits-container">
+                                <hr>
+                                <li>2 Tb Storgae</li>
+                                <hr>
+                                <li>10 Users Allowed</li>
+                                <hr>
+                                <li>Send upto 20 Gb</li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <button class="btn btn-basic border  text-center w-100 p-2 my-3">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
