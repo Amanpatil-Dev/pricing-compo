@@ -92,6 +92,9 @@ body{
   input:checked + .slider {
     background-color: hsl(236, 72%, 79%);
   }
+  input:hover + .slider {
+    background-color: hsl(236, 72%, 79%);
+  }
   
   input:focus + .slider {
     box-shadow: 0 0 1px hsl(236, 72%, 79%);
